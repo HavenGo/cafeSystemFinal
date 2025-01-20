@@ -283,7 +283,9 @@ int main() {
                 }
             }
         } else if (choice == 2) {
-            // Customer menu: Order food and drinks
+
+
+
             double totalCost = 0;
             bool ordering = true;
 
