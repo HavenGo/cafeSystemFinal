@@ -1,0 +1,160 @@
+Table of content 
+Content                                                                                             
+1. Introduction	
+2. Software Development Life Cycle (SDLC)	
+    2.1 Planning	
+    2.2 Requirements Analysis	
+    2.3 Design	
+        2.3.1 Algorithm of our cafe system code		
+    2.4 Implementation	
+        2.4.1 Explanation of the Cafe Management System Code in Blocks	
+    2.5 Testing	
+    2.6 Deployment	
+    2.7 Maintenance	
+3. Conclusion	
+
+1. Introduction
+The Cafe Management System is a C++ project designed to simplify the day-to-day operations of a cafe. It is tailored to meet the needs of both owners and customers, offering an intuitive and secure platform for managing inventory, placing orders, and calculating costs. The system highlights essential programming concepts like user-defined functions, arrays, and loops while maintaining a clear and logical structure. With its focus on real-world applicability, the project provides a practical solution for small-scale cafe operations.
+For owners, the system offers a password-protected interface to manage the menu, add or update inventory, and adjust prices. This ensures that only authorized users can make changes, safeguarding the integrity of the cafe's operations. Customers, on the other hand, benefit from a straightforward interface to browse available items, place orders, and receive accurate billing information. By separating these functionalities, the system provides a streamlined experience for both user roles while addressing their distinct needs effectively.
+This project not only emphasizes functionality but also demonstrates the importance of software reliability and user experience. Robust error handling and input validation ensure smooth operation even when faced with invalid inputs or unexpected scenarios. Designed with scalability and maintainability in mind, the Cafe Management System is a practical introduction to software development principles, making it an excellent project for both learning and real-world application.
+  
+2. Software Development Life Cycle (SDLC)
+  
+2.1 Planning
+This initial phase involves gathering requirements, analyzing them, and planning the project. This includes understanding the scope, objectives, and feasibility of the project.
+The project was planned with the following objectives:
+Implement a dual-mode system: The program has separate modes for the owner and customer. This distinction is clearly reflected in the code through the user choice mechanism.
+Enable effective menu management: Functions like displayFoodMenu and displayDrinkMenu serve the owner by presenting an organized view of items, prices, and availability.
+
+ Provide customers with a seamless ordering experience: The Customer Menu allows for food and drink ordering while updating inventory dynamically.
+ Provide a system for menu management and order placement.
+ Include robust input validation to prevent errors.
+ Implement logical flow and ensure code readability.
+  
+2.2 Requirements Analysis
+During the analysis phase, the project requirements were divided into:
+Owner Features: Add, delete, update items; change password.
+Customer Features: Place orders, calculate total cost.
+Potential challenges identified:
+- Handling invalid inputs (e.g., non-numeric data).
+- Preventing duplicate menu items.
+- Ensuring system security with a password-protected owner mode.
+  
+2.3 Design
+  
+2.3.1 Algorithm of our cafe system code
+  
+1.Initialize Variables
+Define constants for the maximum number of items (MAX_ITEMS).
+Create arrays to store food and drink items, their prices, and their quantities.
+Initialize counters (foodCount, drinkCount) to track the number of items.
+Set the owner password (ownerPassword).
+2.Display Welcome Message
+Print a welcome message for the Cafe Management System.
+3.Main Menu
+Continuously prompt the user with the following options: 
+1.Owner Mode
+2.Customer Mode
+3.Exit
+Validate the input and convert it to an integer.
+Exit the program if the user selects option 3.
+4.Owner Mode
+Ask for the owner password. If incorrect, display an error message and return to the main menu.
+Display the Owner Menu with the following options: 
+1.Add food item
+2.Add drink item
+3.View food items
+4.View drink items
+5.Delete food item
+6.Delete drink item
+7.Change password
+8.Exit Owner Menu
+Validate and process the user's choice.
+5.Owner Mode Functionalities
+Add Item: 
+Prompt for item name, price, and quantity.
+Check for duplicates: if the item exists, prompt to add the new quantity to the existing item.
+Add the item to the appropriate menu array if not a duplicate.
+View Items: 
+Display the current food or drink menu with item details.
+Delete Item: 
+Display the menu and ask for the item number to delete.
+Validate the input and remove the item by shifting subsequent elements.
+Change Password: 
+Verify the current password.
+Prompt for a new password and confirm it.
+Update the password if both entries match.
+6.Customer Mode
+Display the Customer Menu with the following options: 
+1.Order food items
+2.Order drink items
+3.View total price
+4.Exit Customer Menu
+Validate and process the user's choice.
+7.Customer Mode Functionalities
+Order Items: 
+Display the relevant menu and prompt for the item number and quantity.
+Check if the quantity is available.
+Update the total cost and reduce the available quantity.
+View Total Price: 
+Display the total cost of the items ordered so far.
+Exit: 
+Return to the main menu.
+8.Exit Program
+Display a thank-you message and terminate the program.
+
+2.4 Implementation
+The project was implemented in C++ using the following key features:
+Arrays: To store menu items, prices, and quantities.
+Functions: For modular code and easier debugging.
+Loops and Conditionals: To control program logic.
+The main operations were divided into Owner and Customer menus, each with specific functionalities as per the requirements.
+Next we will see the actual code with explanation:
+  
+2.4.1 Explanation of the Cafe Management System Code in Blocks
+
+1. Program Setup
+Purpose: Initialize arrays, variables, and constants needed for managing the menu and user roles.
+  
+2. Displaying Menus
+Purpose: Functions to show food and drink menus with item details.
+
+3. Main Menu
+Purpose: Provide users the option to access Owner Mode, Customer Mode, or Exit.
+
+4. Owner Mode
+Purpose: Allow the owner to manage menus (add, delete items) and update the password.
+
+5. Customer Mode
+Purpose: Allow customers to order items and view total cost.
+
+6. Adding Items (Owner)
+Purpose: Add new items to the menu or update quantities if the item already exists.
+
+7. Deleting Items (Owner)
+Purpose: Remove items from the menu based on their position.
+
+8. Ordering Items (Customer)
+Purpose: Let customers add items to their order and calculate total cost.
+
+
+2.5 Testing
+Extensive testing was performed to ensure the system's reliability. 
+Issues discovered and resolved.
+Infinite Loop on Invalid Input: Non-numeric inputs caused an infinite loop. This was resolved using a validation mechanism:
+Duplicate Menu Items: Prevented by checking for existing items before adding new ones.
+Boundary Conditions:Tested scenarios such as empty menus and maximum item limits.
+2.6 Deployment
+The deployment phase of the Cafe Management System involves making the application ready for use in a real-world environment. In this context, the system is intended to run on a local machine, meaning that there is no need for complex server configurations or cloud services. The system is packaged as a standalone executable, making it accessible to users with basic computing knowledge. After the code is compiled and tested, it can be transferred to the target machine or environment where it will be used. The deployment process in this case focuses on ensuring that the program runs smoothly on different operating systems and hardware setups, particularly Windows or Linux platforms where C++ compilers are commonly available.
+Since the Cafe Management System is designed to be run on personal or office computers, deployment also involves ensuring that the necessary runtime libraries for C++ are installed. This might include ensuring that the machine has the appropriate version of a C++ compiler and libraries to support the code. Additionally, there could be a requirement for specific software packages or dependencies to be installed, though in this case, the system is kept simple to avoid external dependencies. Proper instructions on how to install the necessary environment would be provided, along with any troubleshooting steps for common installation issues.
+Lastly, user documentation is an essential part of deployment. This would include clear instructions on how to download, install, and run the Cafe Management System. The documentation ensures that even non-technical users can navigate the setup process without difficulties. Furthermore, a feedback loop is necessary for post-deployment maintenance, where users can report any bugs or issues encountered during usage. This ensures the system remains functional and can be updated for future enhancements or bug fixes, contributing to its long-term success.
+2.7 Maintenance
+Future updates can include:
+- Database integration for data persistence.
+- A graphical user interface (GUI) for better user experience.
+- Advanced features such as item search and filtering.
+
+3. Conclusion
+The Cafe Management System successfully achieves its operational goals. It is a well-structured project designed to manage essential cafe operations, focusing on both owners and customers. It provides an efficient platform for owners to add, update, and delete food and drink items while securely protecting their access through a password system. Customers can view menus, place orders, and receive real-time updates on their total costs, ensuring a seamless and user-friendly experience. This separation of functionalities allows the system to cater to the distinct needs of its users while maintaining clarity and simplicity in its interface.
+Throughout the development process, significant effort was devoted to ensuring robust error handling and input validation. Challenges such as infinite loops from invalid inputs were addressed with effective solutions like character-by-character validation. Additionally, the system's ability to dynamically adjust inventory and pricing ensures that it remains accurate and reflective of real-time operations. These measures not only enhance the reliability of the system but also highlight the importance of iterative testing and debugging in creating functional software.
+This project serves as an excellent example of how foundational programming concepts can address real-world problems. By employing structured design and modular coding practices, the system demonstrates scalability and maintainability for future enhancements, such as integrating databases or improving the user interface with a graphical design. The Cafe Management System not only meets its intended goals but also provides valuable insights into software development processes, making it a practical and educational endeavor for aspiring developers.
