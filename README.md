@@ -29,19 +29,6 @@ Welcome to the **Cafe Management System**, a C++ program designed to simplify ca
 
 ---
 
-## 👨‍🍳 Meet the Team  
-This project was brought to life by **Group 9**, a dedicated team of programmers:  
-
-| **Name**           | **ID Number**   |  
-|---------------------|-----------------|  
-| Amir Yimam          | ETS0169/16      |  
-| Haven Goitom        | ETS0667/16      |  
-| Hawdiya Abdella     | ETS0668/16      |  
-| Hawi Sebsibe        | ETS0670/16      |  
-| Hayat Khayredin     | ETS0675/16      |  
-
----
-
 ## 🍽️ How It Works  
 
 ### Owner Menu  
