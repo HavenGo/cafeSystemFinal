@@ -1,6 +1,3 @@
-Certainly! Here's a more creative and engaging version of your README:
-
----
 
 # ☕️ Cafe Management System 🍴  
 **"Where owners manage and customers indulge!"**
