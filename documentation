@@ -1,0 +1,128 @@
+# Cafe Management System Documentation
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Software Development Life Cycle (SDLC)](#software-development-life-cycle-sdlc)
+   - [2.1 Planning](#21-planning)
+     - [2.1.1 Project Objectives](#211-project-objectives)
+     - [2.1.2 Menu Management Features](#212-menu-management-features)
+   - [2.2 Requirements Analysis](#22-requirements-analysis)
+     - [2.2.1 Owner Features](#221-owner-features)
+     - [2.2.2 Customer Features](#222-customer-features)
+     - [2.2.3 Challenges Identified](#223-challenges-identified)
+   - [2.3 Design](#23-design)
+     - [2.3.1 System Algorithm](#231-system-algorithm)
+   - [2.4 Implementation](#24-implementation)
+     - [2.4.1 Key Features Used](#241-key-features-used)
+     - [2.4.2 Code Explanation by Blocks](#242-code-explanation-by-blocks)
+   - [2.5 Testing](#25-testing)
+     - [2.5.1 Testing Scenarios](#251-testing-scenarios)
+     - [2.5.2 Resolved Issues](#252-resolved-issues)
+   - [2.6 Deployment](#26-deployment)
+     - [2.6.1 Local Setup](#261-local-setup)
+     - [2.6.2 Post-Deployment Considerations](#262-post-deployment-considerations)
+   - [2.7 Maintenance](#27-maintenance)
+     - [2.7.1 Future Enhancements](#271-future-enhancements)
+3. [Conclusion](#conclusion)
+
+---
+
+## Introduction
+The Cafe Management System is a C++ project designed to streamline cafe operations for owners and customers. It enables efficient inventory management, secure data access, and seamless order processing.  
+Key Features:
+- A password-protected owner mode for menu and inventory management.
+- A customer interface for browsing menus, placing orders, and calculating total costs.  
+This project emphasizes software reliability, error handling, and real-world applicability, making it both educational and practical.  
+
+---
+
+## Software Development Life Cycle (SDLC)
+
+### 2.1 Planning
+#### 2.1.1 Project Objectives
+The project was planned to:
+- Provide a dual-mode system for owners and customers.
+- Ensure robust input validation and error handling.
+- Maintain scalability and modularity.
+
+#### 2.1.2 Menu Management Features
+- Owners can view, add, update, and delete menu items.
+- Customers can order items and calculate total costs dynamically.
+
+---
+
+### 2.2 Requirements Analysis
+#### 2.2.1 Owner Features
+- Add, delete, update menu items.
+- Change the password for secure access.
+
+#### 2.2.2 Customer Features
+- Place orders and calculate the total cost.
+
+#### 2.2.3 Challenges Identified
+- Handling invalid inputs (e.g., non-numeric data).
+- Preventing duplicate menu items.
+- Implementing a secure password-protected owner mode.
+
+---
+
+### 2.3 Design
+#### 2.3.1 System Algorithm
+1. **Initialize Variables**: Arrays for storing menu items, prices, and quantities.
+2. **Display Welcome Message**: A greeting and main menu options.
+3. **Owner Mode**:
+   - Password-protected access.
+   - Functions for menu management and password changes.
+4. **Customer Mode**:
+   - Order items from menus and calculate the total cost.
+   - Update inventory dynamically.
+
+---
+
+### 2.4 Implementation
+#### 2.4.1 Key Features Used
+- **Arrays**: To store menu items, prices, and quantities.
+- **Functions**: To modularize code for better readability and debugging.
+- **Loops and Conditionals**: For program control and logic flow.
+
+#### 2.4.2 Code Explanation by Blocks
+1. **Program Setup**: Initialize arrays, variables, and constants.
+2. **Menus**: Functions to display food and drink menus.
+3. **Owner Mode**: Menu management and password security.
+4. **Customer Mode**: Ordering and cost calculation.
+
+---
+
+### 2.5 Testing
+#### 2.5.1 Testing Scenarios
+- Valid and invalid inputs for both modes.
+- Edge cases like maximum items and empty menus.
+
+#### 2.5.2 Resolved Issues
+- **Infinite Loops**: Caused by invalid inputs; resolved using input validation.
+- **Duplicate Items**: Prevented by checking for existing items.
+
+---
+
+### 2.6 Deployment
+#### 2.6.1 Local Setup
+- Compile the code using a C++ compiler.
+- Ensure runtime libraries are installed.
+
+#### 2.6.2 Post-Deployment Considerations
+- Provide user documentation for setup and usage.
+- Address user feedback for improvements.
+
+---
+
+### 2.7 Maintenance
+#### 2.7.1 Future Enhancements
+- Integration with a database for persistent storage.
+- Development of a graphical user interface (GUI).
+- Advanced search and filtering options.
+
+---
+
+## Conclusion
+The Cafe Management System is a well-structured project that meets its operational goals. It offers a secure, efficient platform for cafe operations while demonstrating key programming principles.  
+The project's emphasis on reliability, scalability, and user experience makes it a valuable tool for small businesses and an excellent learning resource for developers.
